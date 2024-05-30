@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF8"></meta>
+	    <script src="pokemon.js" defer></script> 
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	    <link href="project2.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-image"></div>
+        <div id="info">
+            Welcome to the Pokedex! Search for any pokemon in the text box below and you will get all 
+            the information about that pokemon.<br>
+        </div>
+        <br>
+        <div id="main-search">
+            <div class="input">
+                <div id="title">Enter name of pokemon:</div>
+                <input type="text" id="pokemonName">
+                <button class="submit" onclick="submit()">Search</button>
+            </div>
+        </div>
+        <div id="invalid">Pokemon Not Found!</div>
+        <div id="details">
+            <br><br><br>
+            Pokemon Details
+            <table id="primary" align="center">
+                <tr><th>Name:</th><td id="resultName"></td></tr>
+                <tr><th>Type:</th><td id="resultType"></td></tr>
+                <tr><th>Abilities:</th><td id="resultAbility"></td></tr>
+            </table>
+            <br>
+            <b>Base Stats:</b>
+            <table id="stats" align="center">
+                <tr><th>Health</th><td id="hp"></td></tr>
+                <tr><th>Attack</th><td id="attack"></td></tr>
+                <tr><th>Defense</th><td id="defense"></td></tr>
+                <tr><th>Special Attack</th><td id="spAttack"></td></tr>
+                <tr><th>Special Defense</th><td id="spDefense"></td></tr>
+                <tr><th>Speed</th><td id="speed"></td></tr>
+            </table>
+            <br>
+            <b>Moves:</b>
+            <table align="center">
+                <tr>
+                    <td>
+                        <table id="lvlUp">
+                            <tr><th colspan="3">Moves taught by Level Up</th></tr>
+                            <tr><th>Level</th><th>Type</th><th>Name</th></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="machine">
+                            <tr><th colspan="2">Moves taught by TM</th></tr>
+                            <tr><th>Type</th><th>Name</th></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table id="tutor">
+                            <tr><th colspan="2">Moves taught by Tutor</th></tr>
+                            <tr><th>Type</th><th>Name</th></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <b>Sprites:</b>
+            <table id="imgs" align="center">
+                <tr>
+                    <th>Normal</th>
+                    <th>Shiny</th>
+                </tr>
+                <tr>
+                    <td><img id="normal" width="200" height="200"></td>
+                    <td><img id="shiny" width="200" height="200"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    font-family: 'Inconsolata', monospace;
+    color: black;
+    font-size: 20;
+    text-align: center;
+}
+
+body {
+    background-image: url("background-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main-image {
+    background-image: url("main-img.jpg");
+    background-repeat: no-repeat;
+    height: 69%;
+    width: 100%;
+}
+
+#info {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#main-search {
+    text-align: center;
+}
+
+.submit {
+    border-radius: 10px;
+    background-color: #356abc;
+}
+
+.submit:hover {
+    background-color: #213f6c;
+}
+
+#pokemonName {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#lvlUp td, #machine td, #tutor td, #primary td, #stats td {
+    border: black solid 1px;
+    border-collapse: collapse;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+#stats td {
+    width: 100px;
+}
+
+td {
+    vertical-align: top;
+}
+
+th {
+    background-color: yellow;
+    color: black;
+}
+
+#details {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+#invalid {
+    display: none;
+}
